@@ -1,5 +1,9 @@
 nest new project-name
-npm install prisma --save-dev
-npm install @prisma/client
-npx prisma init
+nest add nestjs-prisma
+
+nest generate module prisma
+nest generate service prisma
+
 DATABASE_URL="postgresql://postgres:oralka52@localhost:5252/nestjs-postgresql-svelte?schema=public"
+
+ npm install --save @nestjs/swagger swagger-ui-express
